@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be Spotless — Partnership Proposal</title>
+<style>
+  :root {
+    --ink: #0f172a; --muted: #64748b; --line: #e2e8f0;
+    --accent: #0f766e; --accent-soft: #ccfbf1;
+    --warn: #b45309; --warn-soft: #fef3c7;
+    --bg: #ffffff; --card: #f8fafc;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink); background: var(--bg); line-height: 1.7; font-size: 16px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 64px 28px 96px; }
+
+  .cover { border-bottom: 3px solid var(--accent); padding-bottom: 36px; margin-bottom: 48px; }
+  .cover .kicker { text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.7rem; font-weight: 700; color: var(--accent); margin-bottom: 14px; }
+  h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 14px; letter-spacing: -0.02em; }
+  .cover .lede { font-size: 1.14rem; color: var(--muted); margin: 0 0 24px; max-width: 66ch; }
+  .cover .meta { font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 22px; }
+  .cover .meta span::before { content: "·"; margin-right: 10px; color: var(--line); }
+  .cover .meta span:first-child::before { content: ""; margin: 0; }
+
+  .key { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px 26px; margin-bottom: 48px; }
+  .key h2 { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin: 0 0 14px; }
+  .key ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; }
+  .key li { font-size: 0.94rem; }
+  .key strong { color: var(--accent); }
+
+  section { margin-bottom: 54px; }
+  h2.section-title { font-size: 1.42rem; margin: 0 0 16px; letter-spacing: -0.01em; padding-top: 10px; border-top: 1px solid var(--line); }
+  h2.section-title .num { display: inline-block; background: var(--accent); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 3px 9px; border-radius: 6px; margin-right: 10px; vertical-align: middle; letter-spacing: 0.06em; }
+  h3 { font-size: 1.06rem; margin: 26px 0 10px; }
+  h4 { font-size: 0.9rem; margin: 20px 0 6px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  p { margin: 0 0 14px; }
+  ul, ol { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 7px 0; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+
+  .callout { border-left: 4px solid var(--accent); background: var(--accent-soft); padding: 16px 22px; border-radius: 0 8px 8px 0; margin: 22px 0; font-size: 0.95rem; }
+  .callout.warn { border-color: var(--warn); background: var(--warn-soft); }
+  .callout p:last-child { margin-bottom: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 18px 0 24px; font-size: 0.93rem; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--card); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  tr:last-child td { border-bottom: none; }
+
+  .sign { margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--line); }
+  .sign p { margin: 0 0 28px; }
+  .sign .line { display: flex; gap: 40px; margin-top: 28px; flex-wrap: wrap; }
+  .sign .line div { flex: 1; min-width: 200px; }
+  .sign .sig-line { border-bottom: 1px solid var(--ink); height: 34px; margin-bottom: 6px; }
+  .sign .sig-label { font-size: 0.8rem; color: var(--muted); }
+
+  @media print {
+    body { font-size: 11pt; }
+    .wrap { max-width: 100%; padding: 0; }
+    section { break-inside: avoid-page; page-break-inside: avoid; }
+    h2.section-title { page-break-after: avoid; }
+    .callout { break-inside: avoid; }
+    a { color: var(--ink); text-decoration: none; }
+  }
+  @media (max-width: 600px) {
+    .wrap { padding: 36px 18px 64px; }
+    h1 { font-size: 1.9rem; }
+    .key ul { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="cover">
+    <div class="kicker">Confidential · Partnership Proposal</div>
+    <h1>Be Spotless</h1>
+    <p class="lede">
+      A proposal for how Felix, Valarine, and Brian move forward together: how we share ownership,
+      how we run the business, how we design it so that it runs on its systems rather than on any one of us,
+      and how we protect each other while we rebuild it.
+    </p>
+    <div class="meta">
+      <span>To Valarine, Brian, and Felix</span>
+      <span>From Felix</span>
+      <span>Nairobi, Kenya</span>
+    </div>
+  </header>
+
+  <div class="key">
+    <h2>Who is who, and what each owns</h2>
+    <ul>
+      <li><strong>Valarine</strong> — Owns the <strong>equipment</strong>. Financed the business in its early days. Project coordinator.</li>
+      <li><strong>Brian</strong> — Owns the <strong>customers</strong> and the <strong>original idea</strong>. Field knowledge. Booking and job management.</li>
+      <li><strong>Felix</strong> — Owns the <strong>platform</strong>. Running day-to-day operations. Funding hosting, email, domain, and startup costs.</li>
+    </ul>
+  </div>
+
+  <section>
+    <p>Dear Valarine and Brian,</p>
+    <p>
+      A few weeks ago this business was about to be written off. It was not failing because of demand. It was failing because there was no operating system, no consistent follow-up, no evidence of work done, and no way for a remote owner to see what was happening.
+    </p>
+    <p>
+      Today it has a platform that fixes most of that. What it does not yet have is a written understanding between the three of us — how we share ownership, how we make decisions, how we handle the assets each of us brings, and how we design a business that outgrows all of us.
+    </p>
+    <p>
+      This proposal is that understanding. It is written to be fair to all three of us, to be legally tight when we register, and to be honest about the hard parts — including the parts where we have been failing each other.
+    </p>
+    <div class="callout">
+      <p><strong>I want to say one thing at the top, because everything below depends on it.</strong> I do not want anyone out of this. Valarine, your equipment is the foundation of every job. Brian, your customers and your original idea are the reason there is a business at all. I am proposing an equal split because each of us contributes something the business cannot function without — and I am proposing the additions below because an equal split alone cannot absorb an investor, protect a royalty, define governance, or design a business that runs without any of us needing to be present every day.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">01</span>What each of us owns, and what has been hard</h2>
+    <table>
+      <thead><tr><th>Person</th><th>What they own</th><th>What has been hard</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Valarine</strong></td>
+          <td>The <strong>equipment</strong>. Bought in her name, financed by her, used by the business under her authority. Also the largest early capital contribution.</td>
+          <td>Frustrated — the operation was not picking up, and running it from abroad was exhausting. She was ready to walk away.</td>
+        </tr>
+        <tr>
+          <td><strong>Brian</strong></td>
+          <td>The <strong>customers</strong> and the <strong>original idea</strong>. Customer relationships, field knowledge, operational history.</td>
+          <td>Inconsistent — the work has been hard to keep pace with, and there was no system supporting him.</td>
+        </tr>
+        <tr>
+          <td><strong>Felix</strong></td>
+          <td>The <strong>platform</strong>. The system that makes the operation workable, the online marketing plan, day-to-day management, and the funding of hosting, email, domain, and startup costs.</td>
+          <td>New to this field, dependent on Valarine and Brian for equipment and customers, and cannot do the in-person marketing alone.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="callout warn">
+      <p><strong>A note on the framing of the past.</strong> The business was failing for six reasons at once: no system, no follow-up, no evidence of work, a remote owner, inconsistent scheduling, and no loyalty mechanism. None of us is solely responsible. The platform fixes most of these. What remains — inconsistency — is fixed by supporting Brian with the tools, training, and part-time help described below. This proposal is not about blame. It is about building the support structure the business never had.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">02</span>The proposed split — equal, and why</h2>
+    <table>
+      <thead><tr><th>Person</th><th>Share</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Valarine</strong></td><td><strong>33⅓%</strong></td><td>Equipment + largest early capital + coordinator role</td></tr>
+        <tr><td><strong>Brian</strong></td><td><strong>33⅓%</strong></td><td>Customers + original idea + field knowledge + booking and job management</td></tr>
+        <tr><td><strong>Felix</strong></td><td><strong>33⅓%</strong></td><td>Platform + daily operations + marketing + founder loan for hosting, email, and startup costs</td></tr>
+      </tbody>
+    </table>
+    <p>
+      This split is <strong>provisional</strong>. It is reviewed in writing at month 12, against the criteria in section 07. Vesting protects all three of us: if any of us does not deliver, unvested shares return to the pool, and the split corrects itself without anyone having to argue about it.
+    </p>
+    <div class="callout">
+      <p><strong>Why equal.</strong> Each of us contributes something the business cannot function without. Valarine's equipment cannot be replaced from nothing. Brian's customers cannot be invented. Felix's platform does not exist anywhere else. Equal shares are the honest starting point when all three are essential.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">03</span>The four additions that make this expansion-ready</h2>
+    <p>The equal split is right for the stage we are in now. These four additions make it right for the stage we intend to reach.</p>
+
+    <h3>1. Two share classes authorised at registration</h3>
+    <p>
+      If we register with only one class of ordinary shares, the first investor conversation will stall — because an investor will want preference on their money, anti-dilution protection, and a liquidation preference. None of those can be granted with a single share class.
+    </p>
+    <table>
+      <thead><tr><th>Class</th><th>Who holds it</th><th>What it gets</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Ordinary shares</strong></td><td>Felix, Valarine, Brian, and future employees</td><td>Voting rights, dividends, and a share of any sale <em>after</em> preference holders are paid</td></tr>
+        <tr><td><strong>Preference shares</strong></td><td>Future investors</td><td>A defined preference amount returned first on a sale, then converting to ordinary (or not)</td></tr>
+      </tbody>
+    </table>
+    <p>
+      We authorise both classes at registration, but issue only ordinary shares now. When an investor arrives, we issue preference shares from the authorised class — no amendment to the constitution, no extraordinary general meeting, no delay.
+    </p>
+
+    <h3>2. Royalty step-up clauses for the platform and the customer list</h3>
+    <p>
+      The platform is licensed to the business royalty-free while the business is founder-operated. Brian's customer list is licensed free as well. That is generous, and it is right for this stage. But if the business is sold to a third party, or raises outside investment, a royalty-free license means the buyer gets both assets for free — and Valarine and Brian and Felix are left with ordinary shares and no compensation for the assets that made the sale possible.
+    </p>
+    <div class="callout">
+      <p><em>"The license is royalty-free while the business is founder-operated. If the business raises outside investment, is acquired by a third party, or exceeds KES [X] in annual revenue, the license converts to a [Y]% revenue royalty, payable monthly, capped at [Z] years or KES [W]. This clause protects the asset owner's contribution if the business is sold to a third party."</em></p>
+    </div>
+    <p>
+      This does not take money from the business while it is still trying to survive. It only activates if the business succeeds — and if it does succeed, the royalty is fair payment for the assets that made the success possible.
+    </p>
+
+    <h3>3. A company reserve</h3>
+    <p>
+      Before any dividend or founder distribution, the company sets aside <strong>10% of monthly net profit</strong> into a company reserve, held in the company's bank account, until the reserve reaches <strong>six months of operating costs</strong>. The reserve funds the first full-time supervisor, the first technical hire, equipment maintenance or replacement, and a cash cushion for slow months.
+    </p>
+    <p>
+      This is not a distribution. It is not paid to anyone. It sits on the balance sheet until the business needs it. An investor will ask what the business does with profit. A written reserve policy is the answer.
+    </p>
+
+    <h3>4. Governance — reserved matters, management matters, board, drag and tag</h3>
+    <p>
+      These are written into a <strong>shareholders' agreement</strong>, separate from the constitution, and are dormant until triggered.
+    </p>
+
+    <h4>Reserved matters — require all three founders to agree</h4>
+    <ul>
+      <li>Sale of the business, or of a majority of its assets.</li>
+      <li>Issuing new shares, or changing the share class structure.</li>
+      <li>Taking on debt above KES [X].</li>
+      <li>Changing the core business activity (cleaning, fumigation, pet washing).</li>
+      <li>Admitting a new equity partner.</li>
+    </ul>
+
+    <h4>Management matters — one person can decide alone</h4>
+    <ul>
+      <li><strong>Felix:</strong> product and platform, daily operations, marketing spend under KES [X] per month.</li>
+      <li><strong>Brian:</strong> bookings, customer allocation, supervisor scheduling, review follow-up.</li>
+      <li><strong>Valarine:</strong> capital expenditure below KES [X], coordinator decisions on pricing review.</li>
+    </ul>
+
+    <h4>Board composition — dormant until an investor arrives</h4>
+    <p>
+      No board now. The moment an investor holds <strong>15% or more</strong>, they may appoint one non-executive director. The board remains three seats until then. This is written down now so that an investor sees a structure that is ready, not one that has to be invented.
+    </p>
+
+    <h4>Drag-along and tag-along</h4>
+    <ul>
+      <li><strong>Drag-along:</strong> if Valarine, Brian, and Felix collectively agree to sell the business, all shareholders must sell on the same terms. Without this, one founder can block a sale the other two want.</li>
+      <li><strong>Tag-along:</strong> if two founders sell to a third party, the third has the right to sell on the same terms. Without this, two founders can sell and leave the third holding shares in a company they no longer control.</li>
+    </ul>
+    <p>
+      These two clauses are what make a sale actually possible. They protect everyone equally.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">04</span>What each of us is committing to</h2>
+
+    <h3>Valarine commits to</h3>
+    <ul>
+      <li>Continuing to own the equipment and making it available to the business.</li>
+      <li>Issuing a written letter of instruction confirming the equipment is hers and used by the business under her authority.</li>
+      <li>Acting as project coordinator — approving pricing, reviewing the books, available for decisions on capital and expansion.</li>
+      <li>Initial capital for registration and the first months of operation, recorded in the founder ledger.</li>
+    </ul>
+
+    <h3>Brian commits to</h3>
+    <ul>
+      <li><strong>Booking management:</strong> first point of contact for new customer bookings.</li>
+      <li><strong>Confirmation within 24 hours:</strong> confirming or declining each new booking within 24 hours. If he cannot, the booking re-routes to a backup supervisor.</li>
+      <li><strong>Getting the job done:</strong> either doing the work himself or managing the part-time students who do the work, to an agreed standard.</li>
+      <li><strong>Review follow-up:</strong> after each completed job, asking the customer for a rating, and flagging any review below 4 stars to Felix.</li>
+      <li>Continuing to own the customer relationships, while making them available to the business.</li>
+      <li>Sharing field knowledge openly with Felix.</li>
+      <li>Signing a written acknowledgment that the equipment is Valarine's property, held by him for use by the business.</li>
+    </ul>
+
+    <h3>Felix commits to</h3>
+    <ul>
+      <li>Owning and maintaining the platform — patching, backups, and the technical role until the business can afford to hire.</li>
+      <li>Running day-to-day operations in Nairobi, managing customer communication, resolving disputes below an agreed threshold.</li>
+      <li>Funding hosting, email, domain, airtime, supervisor pay, and startup costs as a <strong>founder loan</strong>, recorded in the shared ledger, repaid from revenue before any profit is split.</li>
+      <li>Running the online marketing (Facebook, the platform) and doing in-person marketing alongside Valarine and Brian.</li>
+      <li>Training Brian and the part-time students on the platform and on customer service standards.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">05</span>How the "part-time students" plan works</h2>
+    <h4>Stage 1 — Now to month 3 (Brian does the work, supported by the platform)</h4>
+    <ul>
+      <li>Brian is the primary person doing the job or managing the job.</li>
+      <li>The platform handles booking, confirmation, and evidence of work.</li>
+      <li>Felix trains Brian on the platform and on the customer service standard.</li>
+      <li>Valarine is available for escalations and coordination.</li>
+    </ul>
+    <h4>Stage 2 — Month 3 to month 6 (one part-time student)</h4>
+    <ul>
+      <li>Brian identifies and trains one part-time student, paid hourly from revenue (or from the founder loan if revenue is not yet sufficient).</li>
+      <li>The student handles overflow jobs. Brian manages the student's work.</li>
+    </ul>
+    <h4>Stage 3 — Month 6 to month 12 (Brian manages a small team; Felix manages the platform)</h4>
+    <ul>
+      <li>Two part-time students, rotating schedules, with Brian as their manager.</li>
+      <li>Brian's role shifts from "doing the job" to "ensuring the job gets done well."</li>
+      <li>Felix handles the platform and marketing. Valarine handles capital and coordination.</li>
+    </ul>
+    <h4>Stage 4 — Month 12 onward (the review)</h4>
+    <ul>
+      <li>If the team is working, the equal split continues and the business grows.</li>
+      <li>If not, the month-12 review is where the structure adjusts — Brian's role, Brian's share, or the overall structure.</li>
+    </ul>
+    <p>
+      This is why the month-12 review exists. Not to punish anyone, but because the plan may need to change, and a written review is the clean way to change it.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">06</span>The three things we must put in writing before we register</h2>
+
+    <h3>First: the equipment belongs to Valarine</h3>
+    <ul>
+      <li><strong>Valarine's letter of instruction:</strong> "The equipment listed below is my property. It is being used by the business under my authority. If I require its return, or if the business dissolves, it comes back to me."</li>
+      <li><strong>Brian's acknowledgment:</strong> "I acknowledge that the equipment listed below is Valarine's property, held by me for use by the business. I do not own it, and I will return it to Valarine on request or on dissolution."</li>
+    </ul>
+
+    <h3>Second: the customers belong to Brian</h3>
+    <ul>
+      <li>The customer relationships and records are Brian's.</li>
+      <li>They are <strong>licensed to the business</strong> while the partnership is active, with a royalty step-up if the business is sold or raises investment.</li>
+      <li>Brian agrees not to take the customers to a competing business while the partnership is active.</li>
+      <li>If Brian ever leaves, the business retains the right to <strong>continue serving the existing customers</strong>, because those customers were introduced to the business, not just to Brian personally.</li>
+      <li>The business agrees to pay Brian a <strong>fair exit payment</strong> for customer introductions if he ever exits. The amount is agreed now, not argued about later.</li>
+    </ul>
+
+    <h3>Third: the platform belongs to Felix</h3>
+    <ul>
+      <li>The platform remains Felix's property.</li>
+      <li>The business gets a <strong>perpetual, royalty-free license</strong> while founder-operated, with a royalty step-up if the business is sold or raises investment.</li>
+      <li>If Felix ever wants out entirely, the business has the <strong>first right to buy the platform</strong> at a fair price.</li>
+    </ul>
+
+    <div class="callout warn">
+      <p><strong>All three must be in writing before we register.</strong> An unregistered business is fixable in weeks. A registered business with three unrecorded asset arrangements is the kind of problem that takes lawyers and money to unwind.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">07</span>Vesting, the month-12 review, and what "equal" really means</h2>
+    <ul>
+      <li><strong>All three of us vest over four years, with a one-year cliff.</strong> If any of us leaves within the first year, we walk away with nothing. If we stay four years, we own our full share.</li>
+      <li><strong>The month-12 review looks honestly at the split</strong> against these criteria: jobs completed, revenue generated per person, customer reviews (count and average), founder loan balance, and hours committed.</li>
+      <li><strong>If the split needs to change, it changes</strong> — by agreement, or with the help of a neutral third party if we cannot agree.</li>
+      <li><strong>The reserved pool, if needed, comes from equal dilution at month 12.</strong> Nobody is singled out.</li>
+    </ul>
+    <div class="callout">
+      <p><strong>Nobody is being pushed out. Everyone is being reviewed honestly.</strong> That applies to Felix, Valarine, and Brian equally. If Felix does not deliver the platform or the marketing, his shares vest the same way. The rule is symmetrical.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">08</span>Strategic involvement, operational autonomy, and the business that runs on its system</h2>
+    <p>
+      This section is important, and it is the part I most want Valarine and Brian to read carefully.
+    </p>
+    <p>
+      Our shared ambition should be that Be Spotless does not depend on any one of us for daily operations. The business should run on its system — the platform, the operating team, the schedules, the rules — not on any founder being present every hour of every day.
+    </p>
+    <p>
+      Over time — beginning at month 18, and complete, for all three of us, by month 24 to 30 — we intend to move from direct operational involvement to strategic oversight. Daily decisions — bookings, scheduling, job assignment, minor purchases, customer-service responses — are delegated to the operating team and the platform's rules. Strategic decisions — pricing, expansion, senior hiring, capital, and reserved matters — remain with the founders.
+    </p>
+    <div class="callout">
+      <p><strong>This is not passivity.</strong> No founder is absent, and no founder's ownership changes as a result of this transition. It is the intentional design of a business that runs on its systems, not on any individual. The founders remain involved — deliberately, as strategists, not as operators. It is what "off our hands" actually means: not that we stop caring, but that the business no longer depends on any one of us being there every day.</p>
+    </div>
+    <h3>The path to a personal holding company</h3>
+    <p>
+      Each founder may, in time, choose to hold their personal shares through a personal holding company. This is a standard structuring step for tax efficiency, asset protection, and clean future sales, and is used by founders of growing companies worldwide.
+    </p>
+    <p>
+      Any such transfer will be executed transparently, with the other founders' knowledge, in compliance with the constitution, the shareholders' agreement, and applicable tax and registration requirements at the Business Registration Service. It does not change the economic or voting interests of any founder. It is planned for month 18 to 24, once the business has measurable value, and will be done with the advice of a tax advisor.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">09</span>The money question</h2>
+    <ul>
+      <li>Every shilling Felix spends — hosting, email, domain, airtime, supervisor pay, startup costs — is recorded in a shared ledger.</li>
+      <li>The loan is <strong>repaid from revenue before any profit is split</strong>, interest-free, in instalments as the business can afford.</li>
+      <li><strong>Both Valarine and Brian can see the ledger at any time.</strong></li>
+      <li>If the business never makes money, the loan is written off — Felix accepts that risk.</li>
+      <li>Valarine's initial capital — for registration, insurance, and the first months — is recorded in the same ledger, on the same terms. That is only fair.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">10</span>The exit path — honestly</h2>
+    <p>
+      It is worth being honest about what the realistic outcome of a business like this is, because it shapes every decision we make between now and then.
+    </p>
+    <table>
+      <thead><tr><th>Exit path</th><th>What it means</th><th>Realistic timeline</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Strategic acquisition</strong></td><td>A larger cleaning or facilities company buys Be Spotless to absorb its customers, its platform, or its brand</td><td>3–7 years</td></tr>
+        <tr><td><strong>Strategic investment</strong></td><td>A regional operator takes a minority or majority stake to grow the business into other zones or cities</td><td>2–5 years</td></tr>
+        <tr><td><strong>Management buyout</strong></td><td>One founder buys out the others and runs the business independently</td><td>3–10 years</td></tr>
+        <tr><td><strong>Founder dividend / steady cash flow</strong></td><td>No exit at all; the business pays the founders a living income for as long as it operates</td><td>Any time</td></tr>
+        <tr><td><strong>IPO</strong></td><td>Not realistic for a Nairobi service business at this scale</td><td>Not applicable</td></tr>
+      </tbody>
+    </table>
+    <p>
+      The realistic path is one of the first four. An IPO is not on the roadmap, and any investor who hears us say otherwise will lose confidence in us. It is better to be honest about the four real paths than to reach for a fifth that does not apply.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">11</span>What I am asking from each of you</h2>
+    <ul>
+      <li><strong>From Valarine:</strong> agreement in principle on the equal split, on the coordinator role (hours and tasks written down, unpaid for 12 months, reviewed at month 12), and on the written letter of instruction confirming the equipment is hers and used by the business under her authority.</li>
+      <li><strong>From Brian:</strong> agreement in principle on the equal split, on the 24-hour confirmation rule, on the acknowledgment that the equipment is Valarine's, on the customer list agreement, and on the review follow-up role.</li>
+      <li><strong>From all three of us:</strong> agreement in principle on the platform license (Felix retains ownership; the business gets a perpetual royalty-free license, with a royalty step-up and a right of first refusal if Felix exits), on the share class structure, on the company reserve, on the governance framework, and on the strategic-involvement transition described in section 08.</li>
+    </ul>
+    <p>
+      If we agree in principle, I will draft the actual partner agreement, and we will all have a Kenyan lawyer review it before signing. If something does not sit right, I would much rather hear it now than six months from now.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="num">12</span>Closing</h2>
+    <p>
+      A few weeks ago this was a business that was about to be written off. Today it has a platform, it has a plan, and it has three people willing to try.
+    </p>
+    <p>
+      I am proposing an equal split because it is the fairest starting point. I am proposing the additions because equal ownership without governance, without royalty protection, and without a plan to reduce any one founder's daily burden is not a business — it is a shared hobby. I am proposing the strategic-involvement transition because all three of us deserve to reach a point where the business runs without us, and we are free to choose where our attention goes next.
+    </p>
+    <p>
+      If you agree in principle, tell me. If something is wrong, tell me what. Either way, I would rather we had this conversation today, while we are still friends and still believe in this, than after we have registered and started arguing.
+    </p>
+    <p>— <strong>Felix</strong></p>
+  </section>
+
+  <div class="sign">
+    <p><strong>Agreement in principle</strong></p>
+    <p class="muted">Signing here means agreement with the shape of this proposal — not the final partner agreement. The final agreement will be drafted by a Kenyan lawyer and reviewed by all three of us before signing.</p>
+    <div class="line">
+      <div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Valarine — Equipment Owner &amp; Coordinator · Date</div>
+      </div>
+      <div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Brian — Customers &amp; Operations · Date</div>
+      </div>
+      <div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Felix — Platform &amp; Operations · Date</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
